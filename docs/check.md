@@ -46,7 +46,7 @@
 <p>Gets the check information and status for a check using the Aver checkId returned when creating the check</p>
 
 ### Request Parameters
-- [Path] <b>id (required)</b> - The third party identifier provided during the check create call
+- [Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
 
 ### Response Parameters
 - <b>id</b> - The unique identifier of the check

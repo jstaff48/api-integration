@@ -5,15 +5,15 @@
 <p>Creates a new check enrollment</p>
 
 ### Request Parameters
-<b>thirdPartyIdentifier (required)</b> - A unique identifier for this create request to ensure idempotentcy and prevent multiple checks being created on your behalf.  This could be a user account number or unique identifier within your existing application or randomly generated.
+- <b>thirdPartyIdentifier (required)</b> - A unique identifier for this create request to ensure idempotentcy and prevent multiple checks being created on your behalf.  This could be a user account number or unique identifier within your existing application or randomly generated.
 
-<b>groupId (required)</b> - The check group context you want this check to be created under.  (For details on managing your check groups, please see the GoAver.com product documentation)
+- <b>groupId (required)</b> - The check group context you want this check to be created under.  (For details on managing your check groups, please see the GoAver.com product documentation)
 
-<b>email (required)</b> - The e-mail address of the user the check is being created for that will be used to send access links to the user if necessary.
+- <b>email (required)</b> - The e-mail address of the user the check is being created for that will be used to send access links to the user if necessary.
 
-<b>language (optional)</b> - The default language to use for the check enrollment for the user (they can change the language during enrollment).  Options are "en"(English), "zh-Hans"(Chinese), and "fr"(French).  Default is English if this is not provided. 
+- <b>language (optional)</b> - The default language to use for the check enrollment for the user (they can change the language during enrollment).  Options are "en"(English), "zh-Hans"(Chinese), and "fr"(French).  Default is English if this is not provided. 
 
-<b>returnUrl (optional)</b> - The url to redirect to for the user once they have completed the check enrollment workflow.  This is generally used for inline workflows.  The status / complete page will be shown at the end of enrollment if this is not set.
+- <b>returnUrl (optional)</b> - The url to redirect to for the user once they have completed the check enrollment workflow.  This is generally used for inline workflows.  The status / complete page will be shown at the end of enrollment if this is not set.
 
 #### Example Request
 <pre>
@@ -27,11 +27,11 @@
 </pre>
 
 ### Response Parameters
-<b>checkId</b> - The unique identifier of the check 
+- <b>checkId</b> - The unique identifier of the check 
   
-<b>thirdPartyIdentifier</b> - The third party identifier for the created check (provided above)
+- <b>thirdPartyIdentifier</b> - The third party identifier for the created check (provided above)
 
-<b>url</b> - The link url to be passed to the user to allow them to access this created enrollment and continue the process
+- <b>url</b> - The link url to be passed to the user to allow them to access this created enrollment and continue the process
 
 #### Example Response
 <pre>
@@ -49,15 +49,15 @@
 [Path] <b>id (required)</b> - The third party identifier provided during the check create call
 
 ### Response Parameters
-<b>id</b> - The unique identifier of the check
+- <b>id</b> - The unique identifier of the check
   
-<b>organizationId</b> - The parent organization of the check
+- <b>organizationId</b> - The parent organization of the check
 
-<b>groupId</b> - The group the check is in
+- <b>groupId</b> - The group the check is in
 
-<b>status</b> - The status of the check
+- <b>status</b> - The status of the check
 
-<b>checkTypes</b> - The list of check types / verifications performed as part of the check 
+- <b>checkTypes</b> - The list of check types / verifications performed as part of the check 
 
 #### Example Response
 <pre>
@@ -87,15 +87,15 @@
 [Path] <b>id (required)</b> - The third party identifier provided during the check create call
 
 ### Response Parameters
-<b>id</b> - The unique identifier of the check
+- <b>id</b> - The unique identifier of the check
   
-<b>organizationId</b> - The parent organization of the check
+- <b>organizationId</b> - The parent organization of the check
 
-<b>groupId</b> - The group the check is in
+- <b>groupId</b> - The group the check is in
 
-<b>status</b> - The status of the check
+- <b>status</b> - The status of the check
 
-<b>checkTypes</b> - The list of check types / verifications performed as part of the check 
+- <b>checkTypes</b> - The list of check types / verifications performed as part of the check 
 
 #### Example Response
 <pre>
@@ -125,17 +125,17 @@
 [Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
 
 ### Response Parameters
-<b>id</b> - The unique identifier of the check
+- <b>id</b> - The unique identifier of the check
   
-<b>organizationId</b> - The parent organization of the check
+- <b>organizationId</b> - The parent organization of the check
 
-<b>groupId</b> - The group the check is in
+- <b>groupId</b> - The group the check is in
 
-<b>status</b> - The status of the check
+- <b>status</b> - The status of the check
 
-<b>checkTypes</b> - The list of check types / verifications performed as part of the check
+- <b>checkTypes</b> - The list of check types / verifications performed as part of the check
 
-<b>checkResults</b> - The result of the requested checks
+- <b>checkResults</b> - The result of the requested checks
 
 #### Example Response
 <pre>

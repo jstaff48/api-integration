@@ -46,7 +46,7 @@
 <p>Gets the check information and status for a check using the Aver checkId returned when creating the check</p>
 
 ### Request Parameters
-[Path] <b>id (required)</b> - The third party identifier provided during the check create call
+- [Path] <b>id (required)</b> - The third party identifier provided during the check create call
 
 ### Response Parameters
 - <b>id</b> - The unique identifier of the check
@@ -84,7 +84,7 @@
 <p>Gets the check information and status for a check from the third party identifier provided when creating the check</p>
 
 ### Request Parameters
-[Path] <b>id (required)</b> - The third party identifier provided during the check create call
+- [Path] <b>id (required)</b> - The third party identifier provided during the check create call
 
 ### Response Parameters
 - <b>id</b> - The unique identifier of the check
@@ -122,7 +122,7 @@
 <p>Gets the check information and status for a check including all results (if the status is Complete or Failed)</p>
 
 ### Request Parameters
-[Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
+- [Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
 
 ### Response Parameters
 - <b>id</b> - The unique identifier of the check
@@ -236,11 +236,11 @@
 <p>Generates a new one-time use access link for end users to access their check enrollment.</p>
 
 ### Request Parameters
-[Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
+- [Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
 
-<b>language (optional)</b> - The default language to use for the check enrollment for the user (they can change the language during enrollment).  Options are "en"(English), "zh-Hans"(Chinese), and "fr"(French).  Default is English if this is not provided. 
+- <b>language (optional)</b> - The default language to use for the check enrollment for the user (they can change the language during enrollment).  Options are "en"(English), "zh-Hans"(Chinese), and "fr"(French).  Default is English if this is not provided. 
 
-<b>returnUrl (optional)</b> - The url to redirect to for the user once they have completed the check enrollment workflow.  This is generally used for inline workflows.  The status / complete page will be shown at the end of enrollment if this is not set.
+- <b>returnUrl (optional)</b> - The url to redirect to for the user once they have completed the check enrollment workflow.  This is generally used for inline workflows.  The status / complete page will be shown at the end of enrollment if this is not set.
 
 #### Example Request
 <pre>
@@ -251,7 +251,7 @@
 </pre>
 
 ### Response Parameters
-<b>url</b> - The url for the user to access their check enrollment
+- <b>url</b> - The url for the user to access their check enrollment
 
 #### Example Response
 <pre>

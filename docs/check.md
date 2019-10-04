@@ -45,6 +45,20 @@
 ## GET /api/check/{id}
 <p>Gets the check information and status for a check using the Aver checkId returned when creating the check</p>
 
+### Request Parameters
+[Path] <b>id (required)</b> - The third party identifier provided during the check create call
+
+### Response Parameters
+<b>id</b> - The unique identifier of the check
+  
+<b>organizationId</b> - The parent organization of the check
+
+<b>groupId</b> - The group the check is in
+
+<b>status</b> - The status of the check
+
+<b>checkTypes</b> - The list of check types / verifications performed as part of the check 
+
 #### Example Response
 <pre>
 {
@@ -62,18 +76,27 @@
   "VisualWatchlist",
   "RiskProfiling",
   "AddressVerification"
-],
-"checkResults": null
+]
 }
 </pre>
 
-## GET /api/check/getbythirdpartyidentifier/{identifier}
+## GET /api/check/getbythirdpartyidentifier/{id}
 <p>Gets the check information and status for a check from the third party identifier provided when creating the check</p>
 
 ### Request Parameters
-[Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
+[Path] <b>id (required)</b> - The third party identifier provided during the check create call
 
 ### Response Parameters
+<b>id</b> - The unique identifier of the check
+  
+<b>organizationId</b> - The parent organization of the check
+
+<b>groupId</b> - The group the check is in
+
+<b>status</b> - The status of the check
+
+<b>checkTypes</b> - The list of check types / verifications performed as part of the check 
+
 #### Example Response
 <pre>
 {
@@ -91,8 +114,7 @@
   "VisualWatchlist",
   "RiskProfiling",
   "AddressVerification"
-],
-"checkResults": null
+]
 }
 </pre>
 
@@ -101,6 +123,19 @@
 
 ### Request Parameters
 [Path] <b>id (required)</b> - The unique identifier for the check returned from the check create call
+
+### Response Parameters
+<b>id</b> - The unique identifier of the check
+  
+<b>organizationId</b> - The parent organization of the check
+
+<b>groupId</b> - The group the check is in
+
+<b>status</b> - The status of the check
+
+<b>checkTypes</b> - The list of check types / verifications performed as part of the check
+
+<b>checkResults</b> - The result of the requested checks
 
 #### Example Response
 <pre>

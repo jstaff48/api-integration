@@ -45,7 +45,21 @@ https://en.wikipedia.org/wiki/Basic_access_authentication (see Client Side)
 ### Call the Auth API Endpoint
 Call the API auth endpoint with your basic authentication header to return a JWT token so you can call other API endpoints and take further action.   
 
-https://app.goaver.com/api/auth/token
+- GET to https://app.goaver.com/api/auth/token
+
+<b>Example Request Header</b>
+<pre>
+content-type: application/json
+authorization: Basic Z3E1ZTkwMDMtZTQ2Yy00ZjMzLTk0ZGUtOWIxZWVkZmViOTRiOk9EUTJOVGsyTmpOallUbG1NakV6TW1OaU5ERTBZV0kzWVRaaU9HTXhaR014TkdZeFlqYzRORFkxT1RZPQ==
+</pre>
+
+<b>Example Response</b>
+<pre>
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFmYTIyMTczLTZhNDYtNDc2MS04MzA4LTI3YWQ0YjIxMWM0MCIsInJvbGUiOiJQb3J0YWxVc2VyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy91c2VyZGF0YSI6IntcIklkXCI6XCJhZmEyMjE3My02YTQ2LTQ3NjEtODMwOC0yN2FkNGIyMTFjNDBcIixcIkF1dGhUeXBlXCI6MixcIkRhdGFcIjpudWxsfSIsIm5iZiI6MTU3MDE5NjE4NiwiZXhwIjoxNTcwMTk5Nzg2LCJpYXQiOjE1NzAxOTYxODYsImlzcyI6InNlbGYiLCJhdWQiOiJodHRwOi8vZ29hdmVyLmNvbSJ9.XZmHyG_IVurCvpsNM_8R-ACzz9jReafpww9hrr3vyr4"
+}
+</pre>
+
 
 ## Use Case: Example Create Check
 The most common use case is to make a request to create a check for the user on the behalf of your organization if you choose not to invite them via the portal or require deeper integration for higher volume workflows.

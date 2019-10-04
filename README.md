@@ -61,7 +61,9 @@ authorization: Basic Z3E1ZTkwMDMtZTQ2Yy00ZjMzLTk0ZGUtOWIxZWVkZmViOTRiOk9EUTJOVGs
 </pre>
 
 ### Required for all resource API calls
-<b>[Header] Bearer Authorization (required)</b> - Set the Authorization header to the bearer token received from the auth endpoint
+<b>[Header] Authorization</b> - Set the Authorization header to the bearer token received from the auth endpoint
+
+<p>Once you have received your bearer token from the auth endpoint, this token is required to access all other API resources on behalf of your organization.</p>
 
 <b>Example Request Header</b>
 <pre>
